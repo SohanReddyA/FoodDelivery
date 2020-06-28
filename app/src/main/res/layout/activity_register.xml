@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.Register">
+
+    <EditText
+        android:id="@+id/UserNameReg"
+        android:layout_width="249dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="85dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginRight="96dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/EmailReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/UserNameReg"
+        android:layout_alignLeft="@id/UserNameReg"
+        android:layout_alignRight="@id/UserNameReg"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/ImgUrlReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EmailReg"
+        android:layout_alignLeft="@id/UserNameReg"
+        android:layout_alignRight="@id/UserNameReg"
+        android:ems="10"
+        android:hint="Url to your image(Optional)"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/PasswordReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ImgUrlReg"
+        android:layout_alignLeft="@id/ImgUrlReg"
+        android:layout_alignRight="@id/UserNameReg"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/PasswordReg2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/PasswordReg"
+        android:layout_alignLeft="@id/UserNameReg"
+        android:layout_alignRight="@id/UserNameReg"
+        android:ems="10"
+        android:hint="Re-enter Password"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="71dp"
+        android:layout_marginLeft="71dp"
+        android:layout_marginTop="37dp"
+        android:text="Enter the following details"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/RegisterReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/PasswordReg2"
+        android:layout_alignLeft="@id/UserNameReg"
+        android:layout_alignRight="@id/UserNameReg"
+        android:text="Register" />
+</RelativeLayout>

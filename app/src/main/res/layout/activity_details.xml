@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Details">
+
+    <ImageView
+        android:id="@+id/ImgDisplay"
+        android:layout_width="85dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="164dp"
+        android:layout_marginLeft="164dp"
+        android:layout_marginTop="139dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/ItemName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ImgDisplay"
+        android:layout_alignLeft="@id/ImgDisplay"
+        android:layout_alignRight="@id/ImgDisplay"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="TextView"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/ItemPrice2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ItemName2"
+        android:layout_alignLeft="@id/ImgDisplay"
+        android:layout_alignRight="@id/ImgDisplay"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="TextView"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/Quantity"
+        android:layout_width="89dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ItemPrice2"
+        android:layout_alignLeft="@id/ImgDisplay"
+        android:layout_centerHorizontal="false"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="-44dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Quantity"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/Add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/Quantity"
+        android:layout_toRightOf="@id/Quantity"
+        android:text="Add to Order" />
+
+    <Button
+        android:id="@+id/CartDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Add"
+        android:layout_alignLeft="@id/Quantity"
+        android:layout_marginLeft="30dp"
+        android:drawableLeft="@drawable/ic_my_icon"
+        android:text="View Cart" />
+</RelativeLayout>
